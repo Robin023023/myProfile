@@ -43,8 +43,8 @@
 /* Grid layout for projects */
 .projectGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Adjust gap for smaller screens */
   justify-items: center;
 }
 
@@ -174,14 +174,17 @@
 /* Extra small screens */
 @media (max-width: 480px) {
   .container {
-    padding: 20px;
-  }
-  .title {
-    font-size: 1.8rem;
-  }
-  .projectCard {
     padding: 15px;
   }
+  .title {
+    font-size: 1.6rem;
+}
+.projectTitle {
+    font-size: 1.1rem;
+}
+.projectDescription {
+    font-size: 0.85rem;
+}
 }
 
 
