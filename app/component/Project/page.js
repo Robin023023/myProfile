@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import styles from './project.module.css';
 import projects from './videojson';
+import { TypeAnimation } from "react-type-animation";
 
 const Projects = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -20,7 +21,19 @@ const Projects = () => {
 
   return (
     <div className={styles.container} id="Project">
-      <h1 className={styles.title}>My Projects Video</h1>
+       <h1>
+      <TypeAnimation
+        sequence={[
+          "My Projects Video",
+          1000, // Waits 1 second
+          "", 
+          500, // Clears the text and waits 0.5 second
+          "My Projects Video",
+        ]}
+        speed={50} // Speed of typing
+        repeat={Infinity} // Infinite loop
+      />
+    </h1>
       <p className={styles.introText}>
         Here’s a collection of some of my best projects. Each one demonstrates a unique set of skills,
         from front-end development to full-stack applications. Click on any project to view a video demonstration, 

@@ -2,11 +2,25 @@
 
 import Link from 'next/link';
 import styles from './Home.module.css';
+import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
   return (
     <div className={styles.homecontainer}>
-      <h1 className={styles.h1}>Welcome to My Portfolio</h1>
+      <h1>
+      <TypeAnimation
+        sequence={[
+          "Welcome to My Portfolio",
+          1000, // Waits 1 second
+          "", 
+          500, // Clears the text and waits 0.5 second
+          "Welcome to My Portfolio",
+        ]}
+        speed={50} // Speed of typing
+        repeat={Infinity} // Infinite loop
+      />
+    </h1>
+
       <p className={styles.p}>Hi, I am Robin Hossain, a MERN stack developer. I specialize in JavaScript, React, and Node.js. Check out my projects and skills.</p>
       <div className={styles.buttongroup}>
         <Link href="#Project">

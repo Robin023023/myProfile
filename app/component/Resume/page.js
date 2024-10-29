@@ -1,13 +1,28 @@
+"use client"
+
 import React from 'react';
 import styles from './Resume.module.css';
+import { TypeAnimation } from "react-type-animation";
 
 const Resume = () => {
   return (
     <div className={styles.resumeContainer} id="Resume">
-      <h1 className={styles.title}>My Resume</h1>
+      <h1>
+      <TypeAnimation
+        sequence={[
+          "My Resume",
+          1000, // Waits 1 second
+          "", 
+          500, // Clears the text and waits 0.5 second
+          "My Resume",
+        ]}
+        speed={50} // Speed of typing
+        repeat={Infinity} // Infinite loop
+      />
+    </h1>
       
       <p className={styles.description}>
-        I'm Robin, a passionate MERN stack developer with over three years of experience in building
+      I&apos;m Robin, a passionate MERN stack developer with over three years of experience in building
         responsive and scalable web applications. My expertise lies in developing user-friendly interfaces, 
         managing back-end functionality, and implementing secure authentication systems. My goal is to 
         continuously enhance my skills and stay updated with the latest advancements in web development.
@@ -19,7 +34,7 @@ const Resume = () => {
         my qualifications and past projects.
       </p>
 
-      <a href="/img/pdf.png" download className={styles.btn}>
+      <a href="/img/myPhoto.png" download className={styles.btn}>
         Download My CV
       </a>
     </div>
