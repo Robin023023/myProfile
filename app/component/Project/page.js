@@ -52,6 +52,17 @@ const Projects = () => {
         ))}
       </div>
 
+      <div className={styles.workSampleContainer}>
+      <h1 className={styles.workSampleTitle}>Work Sample</h1>
+      <p className={styles.workSampleDescription}>
+  &quot;A platform built to connect blood donors with recipients, allowing users to search for donors based on blood type and location. Developed using Next.js for the frontend and Node.js with MongoDB for the backend, this project demonstrates skills in building user-friendly interfaces, handling authentication, and managing a database.&quot;
+</p>
+
+      <a className={styles.workSampleLink} href="https://bdblood24.com" target="_blank" rel="noopener noreferrer">
+        Visit bdblood24.com
+      </a>
+    </div>
+
       {isModalOpen && selectedProject && (
         <div className={styles.modal}>
           <div className={styles.modalContent}>

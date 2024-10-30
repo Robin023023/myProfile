@@ -1,5 +1,3 @@
-
-
 /* Container for the whole project page */
 .container {
   padding: 50px 60px;
@@ -187,4 +185,44 @@
 }
 }
 
+/* workSample.module.css */
+
+.workSampleContainer {
+  background-color: #f8f9fa; /* Light background color for contrast */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.workSampleTitle {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.workSampleDescription {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.workSampleLink {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #007bff; /* Button-like appearance */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.workSampleLink:hover {
+  background-color: #0056b3;
+}
 
